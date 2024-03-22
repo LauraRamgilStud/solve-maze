@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(var(--GRID_WIDTH), max-content);
+}
+
+.cell {
+  height: 32px;
+  width: 32px;
+  box-sizing: border-box;
+  background-color: #555;
+  border: 1px dotted #444;
+}
+
+.north {
+  border-top: 1px solid gainsboro;
+}
+
+.south {
+  border-bottom: 1px solid gainsboro;
+}
+
+.east {
+  border-right: 1px solid gainsboro;
+}
+
+.west {
+  border-left: 1px solid gainsboro;
+}
+
+.start {
+  background-color: green;
+}
+
+.goal {
+  background-color: blueviolet;
+}
+
+.visited {
+  background-color: red;
+}
